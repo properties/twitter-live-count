@@ -37,6 +37,6 @@
   $TweetDetail["screenname"]    = $screenName[1];
 
   // Echo the json
-  echo json_encode($TweetDetail, JSON_PRETTY_PRINT);
+  echo json_encode($TweetDetail);
 
 ?>
