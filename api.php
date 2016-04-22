@@ -13,7 +13,7 @@
     'method'=>"GET",
     'header'=>"Accept-language:  nl-NL,nl;q=0.8,en-US;q=0.6,en;q=0.4\r\n" .
               "User-Agent: 	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.366\r\n" .
-              "ACCEPT: 	text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\r\n"
+              "ACCEPT: 	text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
     )
   );
 
