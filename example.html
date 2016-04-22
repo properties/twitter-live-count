@@ -1,0 +1,26 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script>
+  setInterval(function getInfo(){
+      
+      // post to api.php every 1.5 seconds (1500ms) and put information in div
+      $.post("api.php", { id : "723413639558885376" }, function(tweetDetail){
+      
+        $('#fav').html(tweetDetail.favorite);
+        $('#rt').html(tweetDetail.retweets);
+        
+      },"json");
+
+  }, 1500);
+
+  getInfo();
+  </script>
+</head>
+<body onload="getInfo()">
+
+  fav: <b><div id="fav"></div></b>
+  rt: <b><div id="rt"></div></b>
+
+</body>
+</html>
