@@ -3,11 +3,9 @@ A PHP live tweet counter for Twitter.
 
 Create a live updating tweet information as easy as this:
 ```sh
-  setInterval(function getInfo(){
+  POST to -> api.php
   
-      $.post("api.php", { id : "723413639558885376" } {},"json");
-  
-  }, 1500);
+  VALUE -> id : "723413639558885376"
 ```
 Will give an JSON response:
 ```sh
