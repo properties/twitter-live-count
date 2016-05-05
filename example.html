@@ -3,10 +3,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script>
   setInterval(function getInfo(){
-      $.post("api.php", { id : "723413639558885376" }, function(tweetDetail){
+      $.post("api.php", { id : "723413639558885376" }, function(tweetDetails){
         
-        $('#fav').html(tweetDetail.favorite);
-        $('#rt').html(tweetDetail.retweets);
+        $('#fav').html(tweetDetails.favorite);
+        $('#rt').html(tweetDetails.retweets);
         
       },"json");
   }, 1500);
