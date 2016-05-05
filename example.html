@@ -3,8 +3,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script>
   setInterval(function getInfo(){
-      
-      // post to api.php every 1.5 seconds (1500ms) and put information in div
       $.post("api.php", { id : "723413639558885376" }, function(tweetDetail){
       
         $('#fav').html(tweetDetail.favorite);
