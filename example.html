@@ -4,8 +4,10 @@
   <script>
   setInterval(function getInfo(){
       $.post("api.php", { id : "723413639558885376" }, function(tweetDetail){
+        
         $('#fav').html(tweetDetail.favorite);
         $('#rt').html(tweetDetail.retweets);
+        
       },"json");
   }, 1500);
 
