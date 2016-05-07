@@ -2,7 +2,7 @@
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script>
-  setInterval(function getInfo() {
+  setInterval(function getTweet() {
     
       $.post("api.php", { id : "723413639558885376" }, function(tweetDetails){
 
@@ -17,7 +17,7 @@
   
   </script>
 </head>
-<body onload="getInfo()">
+<body onload="getTweet()">
 
   likes/favorites: <b><div id="fav"></div></b>
   retweets: <b><div id="rt"></div></b>
